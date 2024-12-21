@@ -6,6 +6,7 @@ import numpy as np
 # Load pre-trained embedding model
 embedding_model = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
 
+
 # Step 1: Extract text from PDF
 def extract_text_from_pdf(pdf_path):
     with pdfplumber.open(pdf_path) as pdf:
